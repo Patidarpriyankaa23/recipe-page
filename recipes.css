@@ -1,0 +1,146 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f2;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6600;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #e65100;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #ff6f00, #ffa726);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Section Title */
+.recipes-gallery h2 {
+  font-size: 32px;
+  margin: 40px 0 20px;
+  text-align: center;
+  color: #ff6f00;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-info {
+  padding: 15px 20px;
+}
+
+.recipe-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #d84315;
+}
+
+.recipe-info p {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.recipe-info a {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background-color: #ff6f00;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
