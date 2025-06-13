@@ -1,0 +1,101 @@
+/* recipes.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf4;
+  color: #333;
+}
+
+header {
+  background: #ff5722;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+.recipe-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff3e0;
+  padding: 2rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.recipe-hero img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.recipe-intro {
+  max-width: 600px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.recipe-detail h3 {
+  color: #d84315;
+  margin-top: 1.5rem;
+}
+
+.recipe-detail ul,
+.recipe-detail ol {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-meta p {
+  margin: 0.3rem 0;
+  font-weight: 500;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #ff5722;
+  font-weight: bold;
+}
+
+footer {
+  background: #ff5722;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
